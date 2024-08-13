@@ -1,24 +1,5 @@
-Core Dependencies:
-Python 3.8+
-
-Data Processing and Model Training:
-numpy: For numerical operations.
-pandas: For data manipulation and analysis.
-tensorflow: For building and training the neural network.
-scikit-learn: For metrics and preprocessing utilities.
-transformers: For using BERT and tokenization.
-
-Model Deployment:
-fastapi: For creating the API endpoints.
-uvicorn: For running the FastAPI server.
-
-Model Saving and Loading:
-For saving and loading model Keras format used (optionally 'h5py' to weights in HDF5 format).
-
-Additional Dependencies:
-pydantic: For data validation in FastAPI.
-joblib: For saving and loading Python objects (e.g., LabelEncoders).
-
-Installation of the dependencies:
-All the dependencies ca be installed using pip. Here's a command to install them:
-pip install numpy pandas tensorflow scikit-learn transformers fastapi uvicorn h5py pydantic joblib
+transformers==4.31.0
+tensorflow==2.12.0
+scikit-learn==1.2.2
+fastapi==0.98.0
+uvicorn==0.22.0

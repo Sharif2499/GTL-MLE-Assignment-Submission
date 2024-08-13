@@ -2,11 +2,17 @@ Python environment set up with the necessary libraries:
 
 pip install tensorflow transformers scikit-learn fastapi uvicorn
 
+
 To run the code Following sequence to be maintained: 
+python data_preprocessing.py
+python model_training.py
+python model_evaluation.py
+uvicorn app:app --reload
+
 1. data_preprocessing.py for the 'Data Analysis and Preprocessing'  before training .
 2. model_training.py for 'Model Development' where the model would be built, compiled, trained and saved.
 3. model_evaluation.py for 'Model Evaluation' to evaluate different performance metrices on test set.
-4. app.py for 'Model Deployment' to deploy the model using FastAPI.
+4. app.py for 'Model Deployment' to deploy the model using FastAPI. (Health Check: to http://localhost:8000/health to check the API health; Prediction Endpoint: Send a POST request to http://localhost:8000/predict with JSON data)
 
 
 

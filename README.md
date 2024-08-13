@@ -1,10 +1,17 @@
-# GTL-MLE-Assignment-Submission
 Python environment set up with the necessary libraries:
-
 pip install tensorflow transformers scikit-learn fastapi uvicorn
 
-The BertMultiTaskModel is a neural network model designed to handle two tasks simultaneously: Named Entity Recognition (NER) and Parts of Speech (POS) tagging. The architecture is built upon the BERT (Bidirectional Encoder Representations from Transformers) model, which is a pre-trained transformer-based model known for its effectiveness in various NLP tasks. Here's a breakdown of the architecture:
+To Run:
+Following sequence to be maintained: 
+1. data_preprocessing.py for the preprocessing dataset before training.
+2. model_training.py to building the model to build, compile, train and save the model.
+3. model_evaluation.py to evaluate different performance metrices on test set.
+4. app.py to deploy the model.
 
+
+
+Model Architecture:
+The BertMultiTaskModel is a neural network model designed to handle two tasks simultaneously: Named Entity Recognition (NER) and Parts of Speech (POS) tagging. The architecture is built upon the BERT (Bidirectional Encoder Representations from Transformers) model, which is a pre-trained transformer-based model known for its effectiveness in various NLP tasks. Here's a breakdown of the architecture:
 
 BERT Base Model:
 Type: TFBertModel from the transformers library.
@@ -40,7 +47,3 @@ Data Splits:
 Training Set: Used to train the model.
 Validation Set: Used to tune hyperparameters and avoid overfitting.
 Test Set: Used to evaluate the model's performance.
-
-app.py file connects api
-
-

@@ -1,13 +1,18 @@
 Python environment set up with the necessary libraries:
 
-pip install tensorflow transformers scikit-learn fastapi uvicorn
+python --version # python 3.8 or higher
+pip install virtualenv
+virtualenv venv
+python -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+pip install -r requirements.txt
+python preprocess.py
+python train.py
+python evaluate.py
+uvicorn app:app --host 0.0.0.0 --port 8000
 
 
 To run the code Following sequence to be maintained: 
-python data_preprocessing.py
-python model_training.py
-python model_evaluation.py
-uvicorn app:app --reload
 
 1. data_preprocessing.py for the 'Data Analysis and Preprocessing'  before training .
 2. model_training.py for 'Model Development' where the model would be built, compiled, trained and saved.

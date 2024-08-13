@@ -1,14 +1,23 @@
 Python environment set up with the necessary libraries:
 
 python --version # python 3.8 or higher
+
 pip install virtualenv
+
 virtualenv venv
+
 python -m venv env
+
 source env/bin/activate  # On Windows use `env\Scripts\activate`
+
 pip install -r requirements.txt
+
 python preprocess.py
+
 python train.py
+
 python evaluate.py
+
 uvicorn app:app --host 0.0.0.0 --port 8000
 
 

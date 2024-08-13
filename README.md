@@ -6,7 +6,7 @@ To run the code Following sequence to be maintained:
 1. data_preprocessing.py for the 'Data Analysis and Preprocessing'  before training .
 2. model_training.py for 'Model Development' where the model would be built, compiled, trained and saved.
 3. model_evaluation.py for 'Model Evaluation' to evaluate different performance metrices on test set.
-4. app.py for 'Model Deployment' to deploy the model connecting fast api.
+4. app.py for 'Model Deployment' to deploy the model using FastAPI.
 
 
 

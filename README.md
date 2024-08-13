@@ -51,7 +51,7 @@ Input Shape: The input to the model consists of token IDs and attention masks fo
 Output: The model outputs two sets of predictions: one for NER and one for POS tagging.
 
 Dataset
-The dataset used in this pipeline consists of Bangla sentences with annotated Named Entity (NER) and Parts of Speech (POS) tags.
+The dataset used in this pipeline consists of Bangla sentences with annotated Named Entity (NER) and Parts of Speech (POS) tags. The dataset had five sentences having one tab and the rest had zero tabs which had been preprocessed during preprocessing
 
 Data Structure:
 Sentences: A collection of sentences in Bangla, each represented as a list of tokens.

@@ -1,8 +1,8 @@
 Python environment set up with the necessary libraries:
+
 pip install tensorflow transformers scikit-learn fastapi uvicorn
 
-To Run:
-Following sequence to be maintained: 
+To run the code Following sequence to be maintained: 
 1. data_preprocessing.py for the preprocessing dataset before training.
 2. model_training.py to building the model to build, compile, train and save the model.
 3. model_evaluation.py to evaluate different performance metrices on test set.
